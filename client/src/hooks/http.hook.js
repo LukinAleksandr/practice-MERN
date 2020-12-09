@@ -1,7 +1,6 @@
 import { useCallback, useState } from 'react'
 
 export const useHttp = () => {
-  //инициализируем локальное состояние
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 

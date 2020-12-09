@@ -9,7 +9,6 @@ export const useRoutes = (isAuthenticated) => {
   if (isAuthenticated) {
     return (
       <Switch>
-        {/* строкий перебор патчей и вывод нужного компонента при совпадении */}
         <Route path="/links" exect>
           <LinksPage></LinksPage>
         </Route>
@@ -19,7 +18,6 @@ export const useRoutes = (isAuthenticated) => {
         <Route path="/detail/:id" exect>
           <DetalingPage></DetalingPage>
         </Route>
-        {/* редирект если совпадений небыло */}
         <Redirect to="/create"></Redirect>
       </Switch>
     )
